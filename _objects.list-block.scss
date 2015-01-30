@@ -7,6 +7,7 @@
  */
 
 // Predefine the variables below in order to alter and enable specific features.
+$inuit-object-namespace:            null !default;
 $inuit-list-block-namespace:        $inuit-namespace !default;
 
 $inuit-list-block-padding:          $inuit-base-spacing-unit !default;
@@ -20,8 +21,8 @@ $inuit-enable-list-block--small:    false !default;
 $inuit-enable-list-block--large:    false !default;
 $inuit-enable-list-block--huge:     false !default;
 
-.#{$inuit-list-block-namespace}list-block,
-%#{$inuit-list-block-namespace}list-block {
+.#{$inuit-object-namespace}#{$inuit-list-block-namespace}list-block,
+%#{$inuit-object-namespace}#{$inuit-list-block-namespace}list-block {
     margin:  0;
     padding: 0;
     list-style: none;
